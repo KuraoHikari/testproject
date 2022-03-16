@@ -1,19 +1,25 @@
-# doctors-appointment-booking-system
+# messenger-bot-nodejs
+- A simple Facebook Messenger Chatbot using Mesenger Platform (Node.js)
+- Test this bot (this project) now : https://my-chatbot-haryphamdev.herokuapp.com/
+- Guide to set up this project: https://www.youtube.com/watch?v=h-JqLlNTfrc
+- Full tutorial: https://www.youtube.com/watch?v=h-JqLlNTfrc&list=PLNOjHC_BXrfB8DcOCHtKPWPMl4t9PG5cI&index=2&t=0s
 
-This is the first video for the tutorial building doctor's appointment booking system.
-Using NodeJS and MySQL, the main feature in the website are:
-- CRUD users, login, making medical appointments.
-- Searching with ElasticSearch
-- Chat bot Messenger Facebook (enhance with WitAI)
+## How to run this project ? 
 
-Backend: Nodejs (Express Framework), MySQL (Sequelize package)...
-Frontend: EJS view engine, SASS, AJAX...
+You can set up this project by following these steps below or an easier way, I created a video to set up this project ( Watch my video: https://www.youtube.com/watch?v=h-JqLlNTfrc )
+### 1. Clone this project
+- Copy file .env.example -> create a .env file at the root folder -> fill all app variables in the .evn file
+- Run the "npm install" to test project at the localhost
 
-Playlist full tutorial: https://www.youtube.com/watch?v=25PzpAdndSs&list=PLNOjHC_BXrfBvYQVOfgUcKmWHK25SsPc6
-
-### Find me here:
-- Youtube Channel: https://bit.ly/subscribe-haryphamdev
-- Facebook Fanpage: https://facebook.com/haryphamdev
-- Patreon: https://www.patreon.com/haryphamdev
-- Twitter: https://twitter.com/haryphamdev
-- GitHub: https://github.com/haryphamdev
+### 2. Create a Heroku app, a Facebook Page, a Facebook App.
+#### 2.1 Create a Heroku app
+- Deploy app to Heroku ( need to setup dev dependencies:
+heroku config:set NPM_CONFIG_PRODUCTION=false
+)
+- Config env variables (setup dev dependencies)
+#### 2.2 Facebook Page
+- Create a Facebook Page
+- Config Whitelisted Domains (add the Heroku app domain)
+#### 2.3 Facebook App
+- Create a Facebook App
+- Config webhook
